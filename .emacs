@@ -16,26 +16,18 @@
 
 ;; Anything.el
 (require 'anything-startup)
-;; Anything中で使用する変数を定義
-(setq split-width-threshold 160)
-
-;; rst.el
-; (auto-install-from-url
-;   "http://docutils.sourceforge.net/tools/editors/emacs/rst.el")
-(autoload 'rst-mode
-  "rst.el" "Mode for viewing and editing reStructuredText-documents." t)
-(setq auto-mode-alist
-      (append '(("\\.rst$" . rst-mode)
-                ("\\.rest$" . rst-mode)) auto-mode-alist))
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; 一般設定
 ;;;
 
-;; Optionをメタキーとして扱う
-(setq mac-option-modifier 'meta)
+;; コマンドキーをメタキーにする
+(setq ns-command-modifier (quote meta))
+
+;; C-dでカーソル位置の文字を削除する
+(global-set-key [delete] 'delete-char)
+(global-set-key [kp-delete] 'delete-char)
 
 ;; リターンを押した時にオートインデントさせる（前の行と同じインデント）
 (global-set-key "\C-m" 'newline-and-indent)
@@ -54,8 +46,11 @@
 ;; 対応する括弧を強調表示
 (show-paren-mode t)
 
-;; 選択範囲を明示する
-(setq transient-mark-mode t)
-
 ;; リージョン内の文字を BS/DEL で消す
 (delete-selection-mode 1)
+
+;; 日本語フォントを設定する
+(create-fontset-from-ascii-font "Menlo-14:weight=normal:slant=normal" nil "menlokakugo")
+(set-fontset-font "fontset-menlokakugo" 'unicode (font-spec :family "Hiragino Kaku Gothic ProN" ) nil 'append)
+(add-to-list 'default-frame-alist '(font . "fontset-menlokakugo"))
+(setq face-font-rescale-alist '((".*Hiragino.*" . 1.2) (".*Menlo.*" . 1.0)))
