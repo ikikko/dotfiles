@@ -25,6 +25,9 @@
 ;; コマンドキーをメタキーにする
 (setq ns-command-modifier (quote meta))
 
+;; C-hでカーソル位置の前の文字を削除する
+(global-set-key "\C-h" 'delete-backward-char)
+
 ;; C-dでカーソル位置の文字を削除する
 (global-set-key [delete] 'delete-char)
 (global-set-key [kp-delete] 'delete-char)
