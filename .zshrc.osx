@@ -1,0 +1,30 @@
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
+
+# osx alias
+alias pbc='pbcopy'
+
+# Terminal Colorの設定
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# Maven
+export MAVEN_OPTS=-Xmx1024M
+
+# Groovy
+export GROOVY_HOME=/usr/loca/Celler/groovy/1.8.0
+
+# Python
+export PATH=/usr/local/bin:/usr/local/share/python:$PATH
+
+# man path
+MANPATH=/usr/local/man:$MANPATH
+export MANPATH
+INFOPATH=/usr/local/info:$INFOPATH
+export INFOPATH
+
+# tmux
+# alias tmux='tmuxx'
+# alias tm='tmuxx'
+# alias tma='tmux attach'
+# alias tml='tmux list-window'
