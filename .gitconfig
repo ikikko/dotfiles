@@ -3,3 +3,5 @@
 	email = ikikko+github@gmail.com
 [color]
 	ui = true
+[credential]
+	helper = osxkeychain
