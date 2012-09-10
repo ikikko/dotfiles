@@ -17,6 +17,11 @@
 ;; Anything.el
 (require 'anything-startup)
 
+;; markdown-mode.el
+(autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
+(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+(setq markdown-command-needs-filename t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; 一般設定
