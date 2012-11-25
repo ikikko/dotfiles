@@ -42,5 +42,15 @@
 	s = status --short --branch
 	st = status
 	su = submodule update
+[browse-remote "github.com"]
+	file = "https://{host}/{path}/blob/{short_rev}/{file}{line && \"#L%d\" % line}"
+	top = https://{host}/{path}
+	ref = https://{host}/{path}/tree/{short_ref}
+	rev = https://{host}/{path}/commit/{commit}
+[browse-remote "nulab.backlog.jp"]
+	file = "https://{host}/git/{path[1]}/{path[2]}/blob/{short_rev}/{file}{line && \"#%d\" % line}"
+	top = https://{host}/git/{path[1]}/{path[2]}
+	ref = https://{host}/git/{path[1]}/{path[2]}/tree/{short_ref}
+	rev = https://{host}/git/{path[1]}/{path[2]}/commit/{commit}
 [credential]
 	helper = osxkeychain
