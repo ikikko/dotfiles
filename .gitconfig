@@ -1,6 +1,6 @@
 [user]
-	name = ikikko
-	email = ikikko+github@gmail.com
+	name = nakamura
+	email = nakamura@nulab.co.jp
 [core]
 	# http://stackoverflow.com/questions/136178/git-diff-handling-long-lines
 	pager = less -r
@@ -24,6 +24,17 @@
 	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
 	b = branch -a
 	br = browse-remote
+	br1 = !git br `git log --oneline -n 1 --skip 0 --pretty=format:%H`
+	br2 = !git br `git log --oneline -n 1 --skip 1 --pretty=format:%H`
+	br3 = !git br `git log --oneline -n 1 --skip 2 --pretty=format:%H`
+	br4 = !git br `git log --oneline -n 1 --skip 3 --pretty=format:%H`
+	br5 = !git br `git log --oneline -n 1 --skip 4 --pretty=format:%H`
+	br6 = !git br `git log --oneline -n 1 --skip 5 --pretty=format:%H`
+	br7 = !git br `git log --oneline -n 1 --skip 6 --pretty=format:%H`
+	br8 = !git br `git log --oneline -n 1 --skip 7 --pretty=format:%H`
+	br9 = !git br `git log --oneline -n 1 --skip 8 --pretty=format:%H`
+	# 引数が渡せると、もうちょっとすっきり書ける。こんな感じでできるんだろうけど、うまく動いていない
+	# brn = "!f() { git log --oneline -n 1 --skip $1 --pretty=format:%H ; }; git br `f`"
 	ci = commit
 	co = checkout
 	d = diff
