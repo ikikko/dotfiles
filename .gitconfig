@@ -22,7 +22,7 @@
 	# http://oli.jp/2012/git-powerup/
 	# http://blog.blindgaenger.net/advanced_git_aliases.html
 	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
-	b = branch -a
+	b = branch
 	br = browse-remote
 	br1 = !git br `git log --oneline -n 1 --skip 0 --pretty=format:%H`
 	br2 = !git br `git log --oneline -n 1 --skip 1 --pretty=format:%H`
