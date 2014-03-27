@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<root>
+  <list>
+    <item>
+      <name>Private</name>
+      <list>
+      
+        <item>
+        <name>Emacs Mode</name>
+          <list>
+          
+            <item> 
+              <name>Force change C-ae to Command+Left/Right</name> 
+              <list> 
+                <item> 
+                  <name>In Emacs, Terminal</name> 
+                  <identifier>private.emacsmode_force_controlAE_term</identifier> 
+                  <only>EMACS, TERMINAL</only> 
+                  <autogen>--KeyToKey-- KeyCode::A, VK_CONTROL, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen> 
+                  <autogen>--KeyToKey-- KeyCode::E, VK_CONTROL, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In X11</name> 
+                  <identifier>private.emacsmode_force_controlAE_x11</identifier> 
+                  <only>X11</only> 
+                  <autogen>--KeyToKey-- KeyCode::A, VK_CONTROL, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen> 
+                  <autogen>--KeyToKey-- KeyCode::E, VK_CONTROL, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>  
+                </item> 
+                <item> 
+                  <name>In VMware Fusion, Parallels Desktop, Remote Desktop Connection</name> 
+                  <identifier>private.emacsmode_force_controlAE_vm</identifier> 
+                  <only>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</only> 
+                  <autogen>--KeyToKey-- KeyCode::A, VK_CONTROL, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen> 
+                  <autogen>--KeyToKey-- KeyCode::E, VK_CONTROL, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In Eclipse</name> 
+                  <identifier>private.emacsmode_force_controlAE_eclipse</identifier> 
+                  <only>ECLIPSE</only> 
+                  <autogen>--KeyToKey-- KeyCode::A, VK_CONTROL, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen> 
+                  <autogen>--KeyToKey-- KeyCode::E, VK_CONTROL, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>  
+                </item> 
+              </list> 
+            </item> 
+            
+            <item> 
+              <name>Force change C-y to Command+V</name> 
+              <list> 
+                <item> 
+                  <name>In Emacs, Terminal</name> 
+                  <identifier>private.emacsmode_force_controlY_term</identifier> 
+                  <only>EMACS, TERMINAL</only> 
+                  <autogen>--KeyToKey-- KeyCode::Y, VK_CONTROL, KeyCode::V, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In X11</name> 
+                  <identifier>private.emacsmode_force_controlY_x11</identifier> 
+                  <only>X11</only> 
+                  <autogen>--KeyToKey-- KeyCode::Y, VK_CONTROL, KeyCode::V, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In VMware Fusion, Parallels Desktop, Remote Desktop Connection</name> 
+                  <identifier>private.emacsmode_force_controlY_vm</identifier> 
+                  <only>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</only> 
+                  <autogen>--KeyToKey-- KeyCode::Y, VK_CONTROL, KeyCode::V, ModifierFlag::COMMAND_L</autogen>
+                </item> 
+                <item> 
+                  <name>In Eclipse</name> 
+                  <identifier>private.emacsmode_force_controlY_eclipse</identifier> 
+                  <only>ECLIPSE</only> 
+                  j<autogen>--KeyToKey-- KeyCode::Y, VK_CONTROL, KeyCode::V, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+              </list> 
+            </item> 
+            
+            <item> 
+              <name>Force change C-v to PageDown</name> 
+              <list> 
+                <item> 
+                  <name>In Emacs, Terminal</name> 
+                  <identifier>private.emacsmode_force_controlV_term</identifier> 
+                  <only>EMACS, TERMINAL</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_CONTROL, KeyCode::PAGEDOWN</autogen> 
+                </item> 
+                <item> 
+                  <name>In X11</name> 
+                  <identifier>private.emacsmode_force_controlV_x11</identifier> 
+                  <only>X11</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_CONTROL, KeyCode::PAGEDOWN</autogen> 
+                </item> 
+                <item> 
+                  <name>In VMware Fusion, Parallels Desktop, Remote Desktop Connection</name> 
+                  <identifier>private.emacsmode_force_controlV_vm</identifier> 
+                  <only>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_CONTROL, KeyCode::PAGEDOWN</autogen>
+                </item> 
+                <item> 
+                  <name>In Eclipse</name> 
+                  <identifier>private.emacsmode_force_controlV_eclipse</identifier> 
+                  <only>ECLIPSE</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_CONTROL, KeyCode::PAGEDOWN</autogen> 
+                </item> 
+              </list> 
+            </item> 
+            
+            <item> 
+              <name>Force change Command-v to PageUp</name> 
+              <list> 
+                <item> 
+                  <name>In Emacs, Terminal</name> 
+                  <identifier>private.emacsmode_force_commandV_term</identifier> 
+                  <only>EMACS, TERMINAL</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_COMMAND, KeyCode::PAGEUP</autogen> 
+                </item> 
+                <item> 
+                  <name>In X11</name> 
+                  <identifier>private.emacsmode_force_commandV_x11</identifier> 
+                  <only>X11</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_COMMAND, KeyCode::PAGEUP</autogen> 
+                </item> 
+                <item> 
+                  <name>In VMware Fusion, Parallels Desktop, Remote Desktop Connection</name> 
+                  <identifier>private.emacsmode_force_commandV_vm</identifier> 
+                  <only>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_COMMAND, KeyCode::PAGEUP</autogen>
+                </item> 
+                <item> 
+                  <name>In Eclipse</name> 
+                  <identifier>private.emacsmode_force_commandV_eclipse</identifier> 
+                  <only>ECLIPSE</only> 
+                  <autogen>--KeyToKey-- KeyCode::V, VK_COMMAND, KeyCode::PAGEUP</autogen> 
+                </item> 
+              </list> 
+            </item> 
+            
+            <item> 
+              <name>Force change C-/ to Command+Z</name> 
+              <list> 
+                <item> 
+                  <name>In Emacs, Terminal</name> 
+                  <identifier>private.emacsmode_force_controlZ_term</identifier> 
+                  <only>EMACS, TERMINAL</only> 
+                  <autogen>--KeyToKey-- KeyCode::SLASH, VK_CONTROL, KeyCode::Z, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In X11</name> 
+                  <identifier>private.emacsmode_force_controlZ_x11</identifier> 
+                  <only>X11</only> 
+                  <autogen>--KeyToKey-- KeyCode::SLASH, VK_CONTROL, KeyCode::Z, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In VMware Fusion, Parallels Desktop, Remote Desktop Connection</name> 
+                  <identifier>private.emacsmode_force_controlZ_vm</identifier> 
+                  <only>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</only> 
+                  <autogen>--KeyToKey-- KeyCode::SLASH, VK_CONTROL, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
+                </item> 
+                <item> 
+                  <name>In Eclipse</name> 
+                  <identifier>private.emacsmode_force_controlZ_eclipse</identifier> 
+                  <only>ECLIPSE</only> 
+                  <autogen>--KeyToKey-- KeyCode::SLASH, VK_CONTROL, KeyCode::Z, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+              </list> 
+            </item> 
+            
+            <item> 
+              <name>Force change C-S to Command+F</name> 
+              <list> 
+                <item> 
+                  <name>In Emacs, Terminal</name> 
+                  <identifier>private.emacsmode_force_controlS_term</identifier> 
+                  <only>EMACS, TERMINAL</only> 
+                  <autogen>--KeyToKey-- KeyCode::S, VK_CONTROL, KeyCode::F, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In X11</name> 
+                  <identifier>private.emacsmode_force_controlS_x11</identifier> 
+                  <only>X11</only> 
+                  <autogen>--KeyToKey-- KeyCode::S, VK_CONTROL, KeyCode::F, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+                <item> 
+                  <name>In VMware Fusion, Parallels Desktop, Remote Desktop Connection</name> 
+                  <identifier>private.emacsmode_force_controlS_vm</identifier> 
+                  <only>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</only> 
+                  <autogen>--KeyToKey-- KeyCode::S, VK_CONTROL, KeyCode::F, ModifierFlag::COMMAND_L</autogen>
+                </item> 
+                <item> 
+                  <name>In Eclipse</name> 
+                  <identifier>private.emacsmode_force_controlS_eclipse</identifier> 
+                  <only>ECLIPSE</only> 
+                  <autogen>--KeyToKey-- KeyCode::S, VK_CONTROL, KeyCode::F, ModifierFlag::COMMAND_L</autogen> 
+                </item> 
+              </list> 
+            </item> 
+            
+            <item>
+              <name>[ex] Use Control+X as prefix key</name>
+              <list>
+                <item>
+                  <!-- C-x Mode Core -->
+                  <name>Control+X detail</name>
+                  <appendix>C-x C-s to Command_L+S</appendix>
+                  <appendix>C-x C-f to Command_L+O</appendix>
+                  <appendix>C-x k to Command_L+W</appendix>
+                  <appendix>C-x C-c to Command_L+Q</appendix>
+                  <appendix>C-x C-g to turn off Control+X Mode</appendix>
+                  <identifier vk_config="true">notsave.private.emacsmode_ex_controlX_core</identifier>
+                  <autogen>--ShowStatusMessage-- C-x Mode</autogen>
+                  <autogen>--KeyToKey-- KeyCode::S, VK_CONTROL | ModifierFlag::NONE, KeyCode::S, ModifierFlag::COMMAND_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlX_core</autogen>
+                  <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL | ModifierFlag::NONE, KeyCode::Q, ModifierFlag::COMMAND_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlX_core</autogen>
+                  <autogen>--KeyToKey-- KeyCode::F, VK_CONTROL | ModifierFlag::NONE, KeyCode::O, ModifierFlag::COMMAND_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlX_core</autogen>
+                  <autogen>--KeyToKey-- KeyCode::K, ModifierFlag::NONE,              KeyCode::W, ModifierFlag::COMMAND_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlX_core</autogen>
+                  <autogen>--KeyToKey-- KeyCode::G, VK_CONTROL | ModifierFlag::NONE,                                      KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlX_core</autogen>
+                </item>
+                <item>
+                  <name>Enable Control+X</name>
+                  <identifier>private.emacsmode_ex_controlX</identifier>
+                  <!-- 
+                    <not>EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not>
+                  -->
+                  <autogen>--KeyToKey-- KeyCode::X, VK_CONTROL | ModifierFlag::NONE, KeyCode::VK_CONFIG_FORCE_ON_notsave_emacsmode_ex_controlX_core</autogen>
+                </item>
+              </list>
+            </item>
+        
+            <item>
+              <name>[ex] Use Control+@ as MarkSet</name>
+              <list> 
+                <item> 
+                  <!-- MarkSet Mode Core --> 
+                  <name>MarkSet Mode detail</name> 
+                  <appendix>Control+W to Command_L+X</appendix> 
+                  <appendix>Option+W to Command_L+C</appendix> 
+                  <appendix>Control+G to turn off MarkSet</appendix> 
+                  <appendix>Control+@ to turn off MarkSet</appendix> 
+                  <identifier vk_config="true">notsave.private.emacsmode_ex_controlSpace_core</identifier> 
+                  <autogen>--ShowStatusMessage-- MarkSet</autogen> 
+                  <autogen>--KeyToKey-- KeyCode::W,          VK_CONTROL | ModifierFlag::SHIFT_L | ModifierFlag::NONE, KeyCode::VK_LOCK_SHIFT_L_FORCE_OFF, KeyCode::X, ModifierFlag::COMMAND_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlSpace_core</autogen> 
+                  <autogen>--KeyToKey-- KeyCode::W,          VK_OPTION  | ModifierFlag::SHIFT_L | ModifierFlag::NONE, KeyCode::VK_LOCK_SHIFT_L_FORCE_OFF, KeyCode::C, ModifierFlag::COMMAND_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlSpace_core</autogen> 
+                  <autogen>--KeyToKey-- KeyCode::G,          VK_CONTROL | ModifierFlag::SHIFT_L | ModifierFlag::NONE, KeyCode::VK_LOCK_SHIFT_L_FORCE_OFF,                                      KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlSpace_core</autogen>
+                  <autogen>--KeyToKey-- KeyCode::JIS_ATMARK, VK_CONTROL | ModifierFlag::SHIFT_L | ModifierFlag::NONE, KeyCode::VK_LOCK_SHIFT_L_FORCE_OFF,                                      KeyCode::VK_CONFIG_FORCE_OFF_notsave_emacsmode_ex_controlSpace_core</autogen>
+                </item> 
+                <item> 
+                  <name>Enable Control+@</name> 
+                  <identifier>private.emacsmode_ex_controlSpace</identifier> 
+                  <!--
+                    <not>EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not> 
+                  -->
+                  <not>EMACS</not> 
+                  <autogen>--KeyToKey-- KeyCode::JIS_ATMARK, VK_CONTROL | ModifierFlag::NONE, KeyCode::VK_LOCK_SHIFT_L_FORCE_ON, KeyCode::VK_CONFIG_FORCE_ON_notsave_emacsmode_ex_controlSpace_core</autogen> 
+                </item> 
+              </list>
+            </item>
+
+          </list>
+        </item>
+        
+      </list>
+    </item>
+  </list>
+</root>

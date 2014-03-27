@@ -5,6 +5,12 @@
 	# http://stackoverflow.com/questions/136178/git-diff-handling-long-lines
 	pager = less -r
 	editor = vi
+	quotepath = off
+	excludesfile = ~/.gitignore.global
+[Pager]
+        log = diff-highlight | less -r
+        show = diff-highlight | less -r
+        diff = diff-highlight | less -r
 [color]
 	ui = true
 [push]
@@ -14,7 +20,7 @@
 	autosetuprebase = always
 [merge]
 	# from 1.7.6
-	ff = false
+#	ff = false
 [pull]
 	# from 1.7.9
 	rebase = true

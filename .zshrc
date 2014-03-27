@@ -116,7 +116,10 @@ function _git_not_pushed()
   return 0
 }
 
-RPROMPT="%1(v|%F${CYAN}%1v%2v%f|)${vcs_info_git_pushed}${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)% ${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
+#RPROMPT="%1(v|%F${CYAN}%1v%2v%f|)${vcs_info_git_pushed}${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)% ${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
+
+# ansible の読み込み時に pushd/popd を使ってて、8 以上じゃないと毎回 echo される？ので
+RPROMPT="%1(v|%F${CYAN}%1v%2v%f|)${vcs_info_git_pushed}${RESET}${WHITE}[${BLUE}%(8~,%-2~/.../%2~,%~)% ${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
 
     ;;
 esac
@@ -664,4 +667,13 @@ esac
 
 ## local固有設定
 #
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+if [ -f ~/.zshrc.local ] ; then
+    source ~/.zshrc.local
+fi
+
+## credential設定
+#
+if [ -f ~/.zshrc.credential ] ; then
+    source ~/.zshrc.credential
+fi
+
