@@ -45,6 +45,7 @@ cask install virtualbox
 cask install vagrant
 cask install intellij-idea
 cask install keyremap4macbook
+cask install licecap
 
 # Remove outdated versions
 cleanup
