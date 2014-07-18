@@ -69,7 +69,12 @@
 	top = https://{host}/{path}
 	ref = https://{host}/{path}/tree/{short_ref}
 	rev = https://{host}/{path}/commit/{commit}
-[credential]
-	helper = osxkeychain
+[browse-remote "nulab.git.backlog.jp"]
+	top = https://{host.gsub('.git.','.')}/git/{path}
+	ref = https://{host.gsub('.git.','.')}/git/{path}/tree/{short_ref}
+	rev = https://{host.gsub('.git.','.')}/git/{path}/commit/{commit}
+	file = "https://{host.gsub('.git.','.')}/git/{path}/{file.directory? and :tree or :blob}/{short_rev}/{file}{lines && \"#L%s\" % lines.join(\"-\")}"
 [web]
 	browser = open
+[credential]
+	helper = osxkeychain
