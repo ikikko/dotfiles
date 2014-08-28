@@ -44,8 +44,10 @@ cask install evernote
 cask install virtualbox
 cask install vagrant
 cask install intellij-idea
-cask install keyremap4macbook
+cask install karabiner
 cask install licecap
+cask install skype
+cask install mysqlworkbench
 
 # Remove outdated versions
 cleanup
