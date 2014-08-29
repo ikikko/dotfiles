@@ -1,6 +1,7 @@
 #!/bin/sh
 cd $(dirname $0)
 
+### 設定ファイル
 for dotfile in .?*
 do
     if [ $dotfile != '..' ] && [ $dotfile != '.git' ] && [ $dotfile != '.gitignore' ]
@@ -10,8 +11,13 @@ do
 done
 
 # TODO : サブディレクトリを含む config ファイルも対応する
-# ln -s ~/dotfiles/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/private.xml
 
+### Karabiner
+# export : /Applications/Karabiner.app/Contents/Library/bin/karabiner export > karabiner-import.sh
+./karabiner-import.sh
+ln -sf ~/dotfiles/private.xml ~/Library/Application\ Support/Karabiner/private.xml
+
+### 認証情報の設定ファイル
 for dotfile in credentials/.?*
 do
     if [ $dotfile != 'credentials/..' ]
