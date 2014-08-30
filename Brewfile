@@ -14,9 +14,6 @@ tap caskroom/versions
 ## Shell
 install zsh
 
-## Editor
-install emacs
-
 ## Git
 install git
 install tig
@@ -30,14 +27,18 @@ install markdown
 install nkf
 install jq
 install imagemagick
+install terminal-notifier
 
 ## Languages
 install maven2
 install maven31
+install tomcat
 install rbenv
 install ruby-build
 install pyenv
+install pyenv-virtualenv
 install plenv
+install perl-build
 install nodebrew
 
 ## Database
@@ -45,19 +46,29 @@ install mysql
 
 # Casks
 install brew-cask
-cask install google-chrome
-cask install google-japanese-ime
-cask install evernote
+
+## Programming
+cask install java
+# Java8 + homebrew cask で入れた IntelliJ が安定していないので、ひとまず手動でインストールする
+# see : https://github.com/caskroom/homebrew-cask/issues/4500
+#cask install intellij-idea
+#cask install emacs
+cask install atom
 cask install virtualbox
 cask install vagrant
-cask install intellij-idea
+cask install mysqlworkbench
+
+## Util
+cask install google-chrome
+cask install google-japanese-ime
+cask install google-drive
 cask install karabiner
+cask install evernote
+cask install keepassx0
 cask install licecap
 cask install skype
-cask install mysqlworkbench
 cask install sophos-anti-virus-home-edition
-cask install java
-cask install keepassx0
+cask install appcleaner
 
 # Remove outdated versions
 cleanup

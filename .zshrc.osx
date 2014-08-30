@@ -1,7 +1,13 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
 
-# Terminal Colorの設定
+# man path
+MANPATH=/usr/local/man:$MANPATH
+export MANPATH
+INFOPATH=/usr/local/info:$INFOPATH
+export INFOPATH
+
+# Terminal Color
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
@@ -21,38 +27,34 @@ export GRAILS_HOME=/usr/local/grails-1.4.0.M1
 export GRADLE_OPTS="$GRADLE_OPTS -Xmx512m"
 
 # Python
+export PATH=$HOME/.pyenv/shims:$PATH
 if which pyenv > /dev/null; then eval "$(pyenv init - zsh)"; fi
+## pyenv-virtualenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 ## aws-cli
 if pyenv which aws_zsh_completer.sh 1>/dev/null 2>&1; then
   source "$(pyenv which aws_zsh_completer.sh)"
 fi
 ## ansible
-pushd ~/Documents/git-workspace/ansible/ > /dev/null
+pushd /usr/local/src/ansible/ > /dev/null
 source hacking/env-setup 1>/dev/null 2>&1
 popd > /dev/null
 
 # Perl
-source ~/perl5/perlbrew/etc/bashrc
+if which plenv > /dev/null; then eval "$(plenv init - zsh)"; fi
 
 # Node.js
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Ruby
-# export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 ## Bundler
 alias be="bundle exec"
-
-# man path
-MANPATH=/usr/local/man:$MANPATH
-export MANPATH
-INFOPATH=/usr/local/info:$INFOPATH
-export INFOPATH
 
 # Git
 ln -sf /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
 # zsh-notify
-source ~/.zsh.d/zsh-notify/notify.plugin.zsh
-export SYS_NOTIFIER=~/.rbenv/shims/terminal-notifier
-
+source /usr/local/src/zsh-notify/notify.plugin.zsh
+export SYS_NOTIFIER=/usr/local/bin/terminal-notifier
+export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
