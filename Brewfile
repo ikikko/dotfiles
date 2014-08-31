@@ -49,16 +49,18 @@ install brew-cask
 
 ## Programming
 cask install java
+# IntelliJ を起動するために Java6 も必要
+# see : http://blog.yotchang4s.org/2014/04/13/mac_java8_intellij_idea_13_1_1
+cask install java6
 # Java8 + homebrew cask で入れた IntelliJ が安定していないので、ひとまず手動でインストールする
 # see : https://github.com/caskroom/homebrew-cask/issues/4500
 #cask install intellij-idea
-#cask install emacs
 cask install atom
 cask install virtualbox
 cask install vagrant
 cask install mysqlworkbench
 
-## Util
+## Utils
 cask install google-chrome
 cask install google-japanese-ime
 cask install google-drive
