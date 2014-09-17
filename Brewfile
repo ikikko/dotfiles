@@ -33,6 +33,7 @@ install terminal-notifier
 install maven2
 install maven31
 install tomcat
+install sbt
 install rbenv
 install ruby-build
 install pyenv
@@ -43,6 +44,7 @@ install nodebrew
 
 ## Database
 install mysql
+install postgresql
 
 # Casks
 install brew-cask
@@ -58,6 +60,7 @@ cask install java6
 cask install atom
 cask install virtualbox
 cask install vagrant
+cask install boot2docker
 cask install mysqlworkbench
 
 ## Utils
