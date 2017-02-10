@@ -28,12 +28,15 @@ install nkf
 install jq
 install imagemagick
 install terminal-notifier
+install packer
+install md5sha1sum
 
 ## Languages
 install maven2
 install maven31
 install tomcat
 install sbt
+install typesafe-activator
 install rbenv
 install ruby-build
 install pyenv
@@ -41,6 +44,7 @@ install pyenv-virtualenv
 install plenv
 install perl-build
 install nodebrew
+install haxe
 
 ## Database
 install mysql
@@ -60,20 +64,18 @@ cask install java6
 cask install atom
 cask install virtualbox
 cask install vagrant
-cask install boot2docker
 cask install mysqlworkbench
+cask install dockertoolbox
 
 ## Utils
 cask install google-chrome
 cask install google-japanese-ime
 cask install google-drive
-cask install karabiner
 cask install evernote
-cask install keepassx0
 cask install licecap
 cask install skype
-cask install sophos-anti-virus-home-edition
 cask install appcleaner
+cask install adobe-reader-ja
 
 # Remove outdated versions
 cleanup

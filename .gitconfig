@@ -78,3 +78,5 @@
 	browser = open
 [credential]
 	helper = osxkeychain
+[rebase]
+	autosquash = true

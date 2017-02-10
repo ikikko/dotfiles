@@ -47,6 +47,9 @@ if which plenv > /dev/null; then eval "$(plenv init - zsh)"; fi
 # Node.js
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# Haxe
+export HAXE_STD_PATH=/usr/local/lib/haxe/std
+
 # Ruby
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 ## Bundler
@@ -60,10 +63,14 @@ source /usr/local/src/zsh-notify/notify.plugin.zsh
 export SYS_NOTIFIER=/usr/local/bin/terminal-notifier
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
 
-# Docker
-export DOCKER_HOST=tcp://192.168.59.103:2375
-## docker-enter(nsenter)
-docker-enter() {
-  boot2docker ssh '[ -f /var/lib/boot2docker/nsenter ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter'
-  boot2docker ssh sudo /var/lib/boot2docker/docker-enter "$@"
-}
+# Go
+export GOPATH=$HOME/go
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/nakamura/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/nakamura/google-cloud-sdk/completion.zsh.inc'
+
+# added by travis gem
+[ -f /Users/nakamura/.travis/travis.sh ] && source /Users/nakamura/.travis/travis.sh
