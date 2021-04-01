@@ -16,6 +16,7 @@ done
 # export : /Applications/Karabiner.app/Contents/Library/bin/karabiner export > karabiner-import.sh
 ./karabiner-import.sh
 ln -sf ~/dotfiles/private.xml ~/Library/Application\ Support/Karabiner/private.xml
+ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 
 ### 認証情報の設定ファイル
 for dotfile in credentials/.?*
