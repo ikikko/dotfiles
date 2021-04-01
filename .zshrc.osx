@@ -35,10 +35,6 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 if pyenv which aws_zsh_completer.sh 1>/dev/null 2>&1; then
   source "$(pyenv which aws_zsh_completer.sh)"
 fi
-## ansible
-pushd /usr/local/src/ansible/ > /dev/null
-source hacking/env-setup 1>/dev/null 2>&1
-popd > /dev/null
 
 # Perl
 export PATH=$HOME/.plenv/shims:$PATH
@@ -58,19 +54,5 @@ alias be="bundle exec"
 # Git
 ln -sf /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
-# zsh-notify
-source /usr/local/src/zsh-notify/notify.plugin.zsh
-export SYS_NOTIFIER=/usr/local/bin/terminal-notifier
-export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
-
 # Go
 export GOPATH=$HOME/go
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/nakamura/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/nakamura/google-cloud-sdk/completion.zsh.inc'
-
-# added by travis gem
-[ -f /Users/nakamura/.travis/travis.sh ] && source /Users/nakamura/.travis/travis.sh

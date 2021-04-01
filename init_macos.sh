@@ -1,12 +1,15 @@
 ### Finder
 
 # Macのディレクトリを英語にする
-pushd /System/Library/CoreServices/SystemFolderLocalizations/ja.lproj > /dev/null
-if [ ! -f 'SystemFolderLocalizations.strings.ja.bak' ]; then
-  sudo mv SystemFolderLocalizations.strings SystemFolderLocalizations.strings.ja.bak
-  sudo cp ../en.lproj/SystemFolderLocalizations.strings .
-fi
-popd > /dev/null
+rm ~/Downloads/.localized \\
+  | rm ~/Documents/.localized \\
+  | rm ~/Applications/.localized \\
+  | rm ~/Desktop/.localized \\
+  | rm ~/Library/.localized \\
+  | rm ~/Movies/.localized \\
+  | rm ~/Pictures/.localized \\
+  | rm ~/Music/.localized \\
+  | rm ~/Public/.localized
 
 # Mac OS XのFinderで隠しファイルを表示させる
 defaults write com.apple.finder AppleShowAllFiles TRUE
