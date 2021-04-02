@@ -11,48 +11,9 @@ export INFOPATH
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-# Maven
-export MAVEN_OPTS=-Xmx1024M
-
-# Groovy
-export GROOVY_HOME=/usr/local/Cellar/groovy/2.1.3
-
-# Grails
-export GRAILS_HOME=/usr/local/grails-1.4.0.M1
-
-# Gradle
-export GRADLE_OPTS="$GRADLE_OPTS -Xmx512m"
-
-# Python
-export PATH=$HOME/.pyenv/shims:$PATH
-if which pyenv > /dev/null; then eval "$(pyenv init - zsh)"; fi
-## pyenv-virtualenv
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-## aws-cli
-if pyenv which aws_zsh_completer.sh 1>/dev/null 2>&1; then
-  source "$(pyenv which aws_zsh_completer.sh)"
-fi
-
-# Perl
-export PATH=$HOME/.plenv/shims:$PATH
-if which plenv > /dev/null; then eval "$(plenv init - zsh)"; fi
-
-# Node.js
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-# Haxe
-export HAXE_STD_PATH=/usr/local/lib/haxe/std
-
-# Ruby
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-## Bundler
-alias be="bundle exec"
-
-# Git
-ln -sf /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
-
-# Go
-export GOPATH=$HOME/go
+#sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

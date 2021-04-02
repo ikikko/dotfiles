@@ -1,16 +1,12 @@
 [user]
-	name = nakamura
-	email = nakamura@nulab.co.jp
+	name = ikikko
+	email = ikikko+github@gmail.com
 [core]
 	# http://stackoverflow.com/questions/136178/git-diff-handling-long-lines
 	pager = less -r
 	editor = vi
 	quotepath = off
 	excludesfile = ~/.gitignore.global
-[Pager]
-        log = diff-highlight | less -r
-        show = diff-highlight | less -r
-        diff = diff-highlight | less -r
 [color]
 	ui = true
 [push]
@@ -29,18 +25,6 @@
 	# http://blog.blindgaenger.net/advanced_git_aliases.html
 	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
 	b = branch
-	br = browse-remote
-	br1 = !git br `git log --oneline -n 1 --skip 0 --pretty=format:%H`
-	br2 = !git br `git log --oneline -n 1 --skip 1 --pretty=format:%H`
-	br3 = !git br `git log --oneline -n 1 --skip 2 --pretty=format:%H`
-	br4 = !git br `git log --oneline -n 1 --skip 3 --pretty=format:%H`
-	br5 = !git br `git log --oneline -n 1 --skip 4 --pretty=format:%H`
-	br6 = !git br `git log --oneline -n 1 --skip 5 --pretty=format:%H`
-	br7 = !git br `git log --oneline -n 1 --skip 6 --pretty=format:%H`
-	br8 = !git br `git log --oneline -n 1 --skip 7 --pretty=format:%H`
-	br9 = !git br `git log --oneline -n 1 --skip 8 --pretty=format:%H`
-	# 引数が渡せると、もうちょっとすっきり書ける。こんな感じでできるんだろうけど、うまく動いていない
-	# brn = "!f() { git log --oneline -n 1 --skip $1 --pretty=format:%H ; }; git br `f`"
 	ci = commit
 	co = checkout
 	d = diff
@@ -59,21 +43,6 @@
 	s = status --short --branch
 	st = status
 	su = submodule update
-[browse-remote "github.com"]
-	file = "https://{host}/{path}/{file.directory? and :tree or :blob}/{short_rev}/{file}{lines && \"#L%s\" % lines.join(\"-\")}"
-	top = https://{host}/{path}
-	ref = https://{host}/{path}/tree/{short_ref}
-	rev = https://{host}/{path}/commit/{commit}
-[browse-remote "nulab.backlog.jp"]
-	file = "https://{host}/{path}/{file.directory? and :tree or :blob}/{short_rev}/{file}{lines && \"#L%s\" % lines.join(\"-\")}"
-	top = https://{host}/{path}
-	ref = https://{host}/{path}/tree/{short_ref}
-	rev = https://{host}/{path}/commit/{commit}
-[browse-remote "nulab.git.backlog.jp"]
-	top = https://{host.gsub('.git.','.')}/git/{path}
-	ref = https://{host.gsub('.git.','.')}/git/{path}/tree/{short_ref}
-	rev = https://{host.gsub('.git.','.')}/git/{path}/commit/{commit}
-	file = "https://{host.gsub('.git.','.')}/git/{path}/{file.directory? and :tree or :blob}/{short_rev}/{file}{lines && \"#L%s\" % lines.join(\"-\")}"
 [web]
 	browser = open
 [credential]

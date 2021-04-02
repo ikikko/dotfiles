@@ -12,10 +12,7 @@ done
 
 # TODO : サブディレクトリを含む config ファイルも対応する
 
-### Karabiner
-# export : /Applications/Karabiner.app/Contents/Library/bin/karabiner export > karabiner-import.sh
-./karabiner-import.sh
-ln -sf ~/dotfiles/private.xml ~/Library/Application\ Support/Karabiner/private.xml
+### Karabiner-Elements
 ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 
 ### 認証情報の設定ファイル
@@ -29,5 +26,4 @@ done
 
 # TODO : サブディレクトリを含む credential ファイルも移す
 # - .m2/settings.xml
-# - .pit/*
-# - .aws/config
+# - .aws/credentials
